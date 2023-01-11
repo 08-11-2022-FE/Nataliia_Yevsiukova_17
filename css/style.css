@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  font-weight: 900;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "RalewayRegular";
+  font-weight: 400;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "RalewayMedium";
+  font-weight: 500;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "OpenSansBold";
+  font-weight: 700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+.team {
+  padding: 121px 0;
+}
+.team__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.team__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 38%;
+  margin: 0 auto 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.team__header span {
+  font-family: "RobotoMedium";
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #898f8f;
+  margin-bottom: 15px;
+}
+.team__header h2 {
+  color: #ffcc00;
+  font-family: "RobotoBlack";
+  font-size: 60px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.team__devider {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.team__devider img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.team__devider::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: #ffcc00;
+  position: relative;
+  margin-right: -100%;
+  right: -5px;
+}
+.team__devider::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: #ffcc00;
+  position: relative;
+  margin-left: -100%;
+  left: -5px;
+}
+.team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 70px;
+}
+.team__photo {
+  width: 50%;
+  padding: 70px 85px 70px 0;
+  border-right: 1px solid #ffcc00;
+}
+.team__position {
+  position: relative;
+  width: 77.7%;
+}
+.team__position::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.team__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.team__image img {
+  max-width: 100%;
+}
+.team__angle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.team #angle1 {
+  border-top: 1px solid #ffcc00;
+  border-left: 1px solid #ffcc00;
+  top: -15px;
+  left: -15px;
+}
+.team #angle2 {
+  border-top: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00;
+  top: -15px;
+  right: -15px;
+}
+.team #angle3 {
+  border-bottom: 1px solid #ffcc00;
+  border-left: 1px solid #ffcc00;
+  bottom: -15px;
+  left: -15px;
+}
+.team #angle4 {
+  border-bottom: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00;
+  bottom: -15px;
+  right: -15px;
+}
+.team__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 70px 0 70px 85px;
+}
+.team__info h3 {
+  font-family: "RobotoBlack";
+  font-size: 36px;
+  line-height: 1.17;
+  color: #666666;
+  margin-bottom: 60px;
+}
+.team__info span {
+  display: block;
+  font-family: "RalewayRegular";
+  font-size: 24px;
+  line-height: 1.5;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.team__socials {
+  margin-bottom: 49px;
+}
+.team p {
+  font-family: "RalewayMedium";
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team__view {
+  font-family: "OpenSansBold";
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #666666;
+  border: 1px solid #ffcc00;
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+.team__lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.team__lines > * {
+  height: 4px;
+  background-color: #ffcc00;
+  width: 10px;
+}
+.team__lines_long {
+  width: 20px;
+}

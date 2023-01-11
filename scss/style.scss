@@ -1,0 +1,196 @@
+@import "_style__null";
+@font-face {
+  font-family: "RobotoBlack";
+  font-weight: 900;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "RalewayRegular";
+  font-weight: 400;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "RalewayMedium";
+  font-weight: 500;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "OpenSansBold";
+  font-weight: 700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+$COLOR_YELLOW: #ffcc00;
+$margin: 5px;
+
+.team {
+  padding: 121px 0;
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin: 0 auto 40px;
+    align-items: center;
+    position: relative;
+    & span {
+      font-family: "RobotoMedium";
+      font-size: 18px;
+      line-height: 1.33;
+      text-transform: uppercase;
+      color: #898f8f;
+      margin-bottom: $margin * 3;
+    }
+    & h2 {
+      color: $COLOR_YELLOW;
+      font-family: "RobotoBlack";
+      font-size: 60px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: $margin * 8;
+    }
+  }
+  &__devider {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    & img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: $COLOR_YELLOW;
+      position: relative;
+      margin-right: -100%;
+      right: -5px;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: $COLOR_YELLOW;
+      position: relative;
+      margin-left: -100%;
+      left: -5px;
+    }
+  }
+  &__content {
+    display: flex;
+    padding: 0 70px;
+  }
+  &__photo {
+    width: 50%;
+    padding: 70px 85px 70px 0;
+    border-right: 1px solid $COLOR_YELLOW;
+  }
+  &__position {
+    position: relative;
+    width: 77.7%;
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    & img {
+      max-width: 100%;
+    }
+  }
+  &__angle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  & #angle1 {
+    border-top: 1px solid $COLOR_YELLOW;
+    border-left: 1px solid $COLOR_YELLOW;
+    top: -15px;
+    left: -15px;
+  }
+  & #angle2 {
+    border-top: 1px solid $COLOR_YELLOW;
+    border-right: 1px solid $COLOR_YELLOW;
+    top: -15px;
+    right: -15px;
+  }
+  & #angle3 {
+    border-bottom: 1px solid $COLOR_YELLOW;
+    border-left: 1px solid $COLOR_YELLOW;
+    bottom: -15px;
+    left: -15px;
+  }
+  & #angle4 {
+    border-bottom: 1px solid $COLOR_YELLOW;
+    border-right: 1px solid $COLOR_YELLOW;
+    bottom: -15px;
+    right: -15px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 70px 0 70px 85px;
+    & h3 {
+      font-family: "RobotoBlack";
+      font-size: 36px;
+      line-height: 1.17;
+      color: #666666;
+      margin-bottom: $margin * 12;
+    }
+    & span {
+      display: block;
+      font-family: "RalewayRegular";
+      font-size: 24px;
+      line-height: 1.5;
+      color: #666666;
+      margin-bottom: $margin * 6;
+    }
+  }
+  &__socials {
+    margin-bottom: 49px;
+  }
+  & p {
+    font-family: "RalewayMedium";
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__view {
+    font-family: "OpenSansBold";
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #666666;
+    border: 1px solid $COLOR_YELLOW;
+    padding: 5px 10px;
+    margin-bottom: $margin * 5;
+  }
+  &__lines {
+    display: flex;
+    gap: 5px;
+    & > * {
+      height: 4px;
+      background-color: $COLOR_YELLOW;
+      width: 10px;
+    }
+    &_long {
+      width: 20px;
+    }
+  }
+}
